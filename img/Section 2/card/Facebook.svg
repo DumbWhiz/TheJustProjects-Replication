@@ -1,0 +1,12 @@
+<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Facebook">
+<circle id="bg" cx="16" cy="16.7961" r="14" fill="url(#paint0_linear_0_218)"/>
+<path id="f" d="M21.2137 21.0777L21.8356 17.1262H17.9452V14.5631C17.9452 13.4818 18.4877 12.4272 20.2302 12.4272H22V9.06313C22 9.06313 20.3945 8.79614 18.8603 8.79614C15.6548 8.79614 13.5617 10.6891 13.5617 14.1146V17.1262H10V21.0777H13.5617V30.6306C14.2767 30.7401 15.0082 30.7961 15.7534 30.7961C16.4986 30.7961 17.2302 30.7401 17.9452 30.6306V21.0777H21.2137Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_218" x1="16" y1="2.79614" x2="16" y2="30.7131" gradientUnits="userSpaceOnUse">
+<stop stop-color="#18ACFE"/>
+<stop offset="1" stop-color="#0163E0"/>
+</linearGradient>
+</defs>
+</svg>
