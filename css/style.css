@@ -503,8 +503,9 @@ width: 50%;
 
 @media screen and (max-width:1390px){
 
-    .section-1 .container{
+    .container{
         /* flex-direction: column; */
+        /* flex-wrap:wrap; */
        }
 /*     
        .section-1 .container .section-1-detail{
