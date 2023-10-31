@@ -44,6 +44,7 @@
     align-items: center;
     gap: 1.5rem;   
 }
+
 .container .logo .jhomes{
     color: var(--color);
     font-family: var(--font-family);
@@ -433,27 +434,27 @@ width: 50%;
 .section-2 .container .about-us h3{
     color: var(--color-b-2);
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.5px;
-    margin-bottom: 24px;
+    margin-bottom: 1.25rem;
 }
 
 .section-2 .container .about-us p{
     font-family: var(--font-family-p);
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin-bottom: 24px;
+    margin-bottom: 1.25rem;
 }
 
 .section-2 .container .about-us ul>li{
     color: #3D3D3D;
     font-family: var(--font-family-p);
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -466,19 +467,19 @@ width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 120px;
+    padding: 2rem 7.5rem;
 }
 
 /* footer logo */
 .footer .container .footer-logo{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 .footer .container .footer-logo p{
     color: #ffffff;
     font-family: var(--font-family);
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -489,13 +490,13 @@ width: 50%;
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .footer .container  .footer-rhs p{
-    color: #ffffff
+    color: #ffffff;
     font-family: var(--font-family);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -503,7 +504,7 @@ width: 50%;
 
 .footer .container  .footer-rhs .footer-social{
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 /* RESPONSIVE DESIGN */
@@ -563,7 +564,7 @@ width: 50%;
 
 
 @media(max-width:1120px){
-
+    
     /*Views */
     .section-1 .container .bed-container .views{
         position: absolute;
@@ -575,7 +576,7 @@ width: 50%;
 
     .section-2 .container .bed2-container .joy-card{
     /* flex-shrink: 0; */
-    width: 55%;
+    width: 50%;
     gap: 0.25rem;
 
     }
@@ -609,6 +610,10 @@ width: 50%;
 
     @media(max-width:1100px) {
         
+        .header .container .house-detail .shop .detail{
+            line-height: 300%;
+        }
+
         .shop{
             flex-wrap: wrap;
         }
@@ -624,6 +629,7 @@ width: 50%;
             font-size: 1.3rem;
         }
 
+        
         .section-1 .container .section-1-detail h3{
             font-size: 2rem;
         }
@@ -635,8 +641,9 @@ width: 50%;
 
 
 @media(max-width:950px) {
-    .footer .container  .footer-rhs p{
-        font-size: 1rem;
+
+    .section-1 .container .section-1-detail .btn-2{
+        padding: 0.5rem;
     }
 
 /* Section One RHS Image */
@@ -658,13 +665,7 @@ section-1 .container  .bed-container{
 
 /*Views and Clicks  */
 .section-1 .container .bed-container .card{
-    background: #ffffff;
-    border-radius: 1rem;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 /*Views */
@@ -710,33 +711,15 @@ section-1 .container  .bed-container{
 /* Joy Details */
 
 .joy-card .joy-detail #p1{
-    color: var(--color);
-    font-family: var(--font-family);
     font-size:0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0.0313rem;
 }
 
 .joy-card .joy-detail #p2{
-    color: #3D3D3D;
-    font-family: var(--font-family);
     font-size: 0.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0.0313rem;
 }
 
 .joy-card .joy-detail #p3{
-    color: var(--color-b-2);
-    font-family: var(--font-family-p);
     font-size: 0.45rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing:0.0313rem;
 }
 
 /* social media icons */
@@ -748,4 +731,126 @@ section-1 .container  .bed-container{
     
 }
 
+.footer .container  .footer-rhs p{
+    font-size: 1rem;
+}
+
+}
+
+@media(max-width:800px){
+
+    .container .logo .jhomes{
+        font-size: 1.5rem;
+    }
+
+    .header .container .house-detail h1{
+        font-size: 2rem;
+    }
+
+    .header .container .house-detail p{
+        font-size: 1rem;
+    }
+
+    .section-1 .container .section-1-detail h3{
+        font-size: 2rem;
+    }
+    
+    .section-1 .container .section-1-detail p{
+        font-size: 1.125rem;
+    }
+
+    .header .container .house-detail button{
+        font-size: 1rem;
+    }
+
+       /* Header Icons */
+.header .container .house-detail .shop{
+    gap: 0.5rem;
+}
+
+.house-detail .shop .shop-container .shop-img{
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.header .container .house-detail .shop .detail{
+    font-size: 0.8rem;
+}
+
+.section-1 .container .section-1-detail h3{
+    font-size: 1.6rem;
+}
+.section-1 .container .section-1-detail p{
+    font-size: 0.8rem;
+}
+
+.section-1 .container .section-1-detail button{
+    font-size: 1rem;
+}
+    .section-1 .container .bed-container .card{
+        padding: 1.2rem;
+    }
+    
+    /* Card Image */
+.section-1 .container .bed-container .card .num-img{
+    padding: 0.25;
+    width: 1.5rem;
+}
+    
+    /* Digits */
+    .section-1 .container .bed-container .card .num{
+        font-size: 0.8rem;
+    }
+    
+
+    
+    /* 'Views' and 'Clicks' */
+.section-1 .container .bed-container .card .num-detail{
+    font-size: 0.75rem;
+   
+}
+
+.section-1 .container .section-1-detail .btn-2{
+    padding: 0.4rem;
+}
+
+.section-2 .container .bed2-container .joy-card{
+    /* flex-shrink: 0; */
+    width: 60%;
+    gap: 0.8rem;
+
+}
+
+.section-2 .container .about-us p{
+    font-size: 1rem;
+}
+
+.section-2 .container .about-us ul>li{
+    font-size: 1rem;
+}
+.footer .container .footer-logo p{
+    font-size: 1.5rem;
+}
+
+.footer .container  .footer-rhs p{
+    font-size: 0.8rem;
+    }
+
+    .footer .container  .footer-rhs img{
+        width: 70%;
+    }
+}
+
+@media(max-width:750px){
+    .container .logo .jhomes{
+        font-size: 1.2rem;
+    }
+
+    .container .nav li{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:750px){
+    
 }
