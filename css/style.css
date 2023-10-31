@@ -162,7 +162,10 @@ width: 50%;
     color: #000;
     font-family: var(--font-family);
     font-size: 1rem;
-    line-height: 120%;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* width: 115px; */
     /* border:2px red solid; */
 }
@@ -225,7 +228,7 @@ width: 50%;
     color:var(--color-2);
     font-family: var(--font-family-p);
     font-size: 1.125rem;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 400;
     line-height: normal;
     font-variant:all-small-caps;
@@ -236,6 +239,7 @@ width: 50%;
     border-radius: 8px;
     margin-bottom: 3.5rem;
     padding:0.9063rem 1.5rem;
+    width: 30%;
 }
 
 /* Section One RHS */
@@ -327,7 +331,7 @@ width: 50%;
     padding: 0 7.875rem;
 }
 
-/* Section Container */
+/* Section-2 Container */
 .section-2 .container .bed2-container{
    width: 50%;
    position: relative;
@@ -419,6 +423,7 @@ width: 50%;
     right: 4%;
 }
 
+
 /* Section 2, About Us */
 
 .section-2 .container .about-us{
@@ -488,7 +493,7 @@ width: 50%;
 }
 
 .footer .container  .footer-rhs p{
-    color: #ffffff;
+    color: #ffffff
     font-family: var(--font-family);
     font-size: 24px;
     font-style: normal;
@@ -501,84 +506,246 @@ width: 50%;
     gap: 16px;
 }
 
-@media screen and (max-width:1390px){
+/* RESPONSIVE DESIGN */
 
-    .container{
-        /* flex-direction: column; */
-        /* flex-wrap:wrap; */
-       }
-/*     
-       .section-1 .container .section-1-detail{
-        width: 40%;
-        border: 2px red solid;
-       } */
-
-       /* .section-1 .container{
+@media(max-width:1300px){
+    .section-1 .container .section-1-detail{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1.5rem;
-        padding: 4rem 7.5rem;
-        margin-bottom: 6.5rem;
+        flex-direction: column;
+        width: 35%;
+        border:2px blue solid;
+    }
     
-    } */
-
-       /* .section-1 .container .bed-container{
+    .section-1 .container  .bed-container{
+        display: flex;
         width: 50%;
-        padding: 0px;
-        margin: 0px;
-        
-       } */
-
-       /* .section-1 .container  .bed-container .bed-img{
-        display: flex;
-        justify-content: flex-end;
-       }
-       .section-1 .container  .bed-container .bed-img img{
-        width: 80%;
-        
-       } */
-}
-@media screen and (max-width:1190px){
-
-   .header .container{
-    /* flex-direction: column; */
-   }
-
-   .container .house-detail{
-    width: ;
-   }
-
-   .container .house{
-
-   }
-   .section-1 .container{
-    /* flex-direction: column; */
-   }
-
-   .section-1 .container .section-1-detail{
-    /* width: 30%; */
-   }
-
-   .section-1 .container  .bed-container{
-    /* width: 70%; */
-   }
-   .section-2 .container{
-    /* flex-direction: column; */
-   }
-}
-
-@media screen and (max-width:375px){
-
-    .header .container{
-        flex-direction: column;
-       }
-
+        border: 2px red solid;
+    }
     .section-1 .container{
-        flex-direction: column;
-       }
+        display: flex;
+        flex-grow: 1;
+    }
+
+    /*Views */
+    .section-1 .container .bed-container .views{
+    left:-20%;
+    /* z-index: 10; */
+}
+
+.section-1 .container .section-1-detail .btn-2{
+    width: 50%;
+}
+}
+
+@media(max-width:1230px){
+
+   /* Header RHS - Image */
+    .header .container .house img{
+        width: 150%;
+    }
+
+    /*Views */
+    .section-1 .container .bed-container .views{
+        position: absolute;
+        top: 38%;
+        left:-25%;
+    }
+
+    /* Joy girl card container*/
+
+.section-2 .container .bed2-container .joy-card{
+    /* flex-shrink: 0; */
+    padding: 10px;
+    gap: 0.25rem;
+
+}
+}
+
+
+@media(max-width:1120px){
+
+    /*Views */
+    .section-1 .container .bed-container .views{
+        position: absolute;
+        top: 38%;
+        left:-30%;
+    }
+
+    /* Joy girl card container*/
+
+    .section-2 .container .bed2-container .joy-card{
+    /* flex-shrink: 0; */
+    width: 55%;
+    gap: 0.25rem;
+
+    }
+
+    .bed2-container .joy-card .social img{
+    width: 20%;
+    }
+    .joy-img img{
+    width: 100%;
+    }
+
+    /* Section 2 Second Card */
+    .section-2 .container .bed2-container .experts{
+    padding:0.65rem 0.5rem;
+    bottom:3%;
+    width: 20%;
+    }
+
+    .experts .expert-img{
+        width: 100%;
+    }
+
+    .section-2 .container .bed2-container .experts .love{
+        width: 40%;
+    }
+
+    .footer .container  .footer-rhs p{
+    font-size: 1.25rem;
+    }
+    }
+
+    @media(max-width:1100px) {
+        
+        .shop{
+            flex-wrap: wrap;
+        }
+    }
+
+    @media(max-width:1000px){
+
+        .header .container .house-detail h1{
+            font-size: 3rem;
+        }
+
+        .header .container .house-detail p{
+            font-size: 1.3rem;
+        }
+
+        .section-1 .container .section-1-detail h3{
+            font-size: 2rem;
+        }
+        
+        .section-1 .container .section-1-detail p{
+            font-size: 1.125rem;
+        }
+    }
+
+
+@media(max-width:950px) {
+    .footer .container  .footer-rhs p{
+        font-size: 1rem;
+    }
+
+/* Section One RHS Image */
+
+section-1 .container  .bed-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    width: 55%;
+}
+
+.section-1 .container .bed-container .bed-img img{
     
-    .section-2 .container{
-        flex-direction: column;
-       }
+    flex-shrink: 0;
+    padding-bottom: 23%;
+
+}
+
+/*Views and Clicks  */
+.section-1 .container .bed-container .card{
+    background: #ffffff;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+/*Views */
+.section-1 .container .bed-container .views{
+    position: absolute;
+    top: 38%;
+    left:-25%;
+    /* z-index: 10; */
+}
+
+/* Clicks */
+.section-1 .container .bed-container .clicks{
+    position: absolute;
+    bottom: 10;
+    right:6%;
+}
+
+
+/* Digits */
+
+.section-1 .container .bed-container .card .num{
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: 1rem;
+    letter-spacing:0.0313rem;
+}
+
+/* 'Views' and 'Clicks' */
+.section-1 .container .bed-container .card .num-detail{
+    line-height: 150%;
+    letter-spacing: 0.0313rem;
+}
+
+
+/* Section-2 */
+
+
+.section-2 .container .bed2-container .experts .love{
+    width:30%;
+}
+
+/* Joy Details */
+/* Joy Details */
+
+.joy-card .joy-detail #p1{
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size:0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.0313rem;
+}
+
+.joy-card .joy-detail #p2{
+    color: #3D3D3D;
+    font-family: var(--font-family);
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.0313rem;
+}
+
+.joy-card .joy-detail #p3{
+    color: var(--color-b-2);
+    font-family: var(--font-family-p);
+    font-size: 0.45rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing:0.0313rem;
+}
+
+/* social media icons */
+
+.joy-card .joy-rhs .social{
+    display: flex;
+    gap:0.45rem;
+    margin-top:1rem;
+    
+}
+
 }
