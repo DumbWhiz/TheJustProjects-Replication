@@ -280,7 +280,7 @@ ul > li:last-child a {
 /* Clicks */
 .section-1 .container .bed-container .clicks {
   position: absolute;
-  bottom: 10;
+  bottom: 0%;
   right: 6%;
 }
 
@@ -596,7 +596,14 @@ ul > li:last-child a {
   .header .container .house-detail .shop .detail {
     line-height: 300%;
   }
-
+    /*Views */
+    .section-1 .container .bed-container .views {
+      position: absolute;
+      top: 30%;
+      left: -30%;
+    }
+  
+    
   .shop {
     flex-wrap: wrap;
   }
@@ -868,13 +875,11 @@ ul > li:last-child a {
 
   .header .container .house-detail .shop .detail {
     font-size: 1rem;
+    line-height:150%;
   }
-
+  
   .header .container .house {
     width: 100%;
-  }
-
-  .header .container .house img {
   }
 
   .section-1 .container {
@@ -919,6 +924,7 @@ ul > li:last-child a {
     padding-bottom:16%;
   }
 
+  
   /*Views and Clicks  */
 .section-1 .container .bed-container .card {
   background: #ffffff;
@@ -1020,4 +1026,70 @@ ul > li:last-child a {
     display: flex;
     gap: 0.6rem;
   }
+}
+
+@media (max-width: 700px){
+
+  .header .container .house-detail .shop .detail {
+    font-size: 0.8rem;
+  }
+
+  
+  .section-1 .container .bed-container .bed-img img {
+    /* flex-shrink: 0; */
+    padding-bottom: 22%;
+  }
+
+  .section-1 .container .bed-container .card {
+    padding: 1.5rem;
+  }
+
+
+  /* Clicks */
+.section-1 .container .bed-container .clicks {
+  position: absolute;
+  bottom: 1%;
+  right: 6%;
+}
+
+/* footer */
+.footer .container {
+ flex-direction:column;
+ gap:2rem
+}
+
+/* footer RHS */
+.footer .container .footer-rhs {
+  align-items:center;
+  gap: 1.5rem;
+}
+
+
+.footer .container .footer-rhs p {
+  font-size: 1rem;
+  text-align:center;
+}
+}
+
+@media (max-width: 650px){
+  
+  .section-1 .container .bed-container .bed-img img {
+    /* flex-shrink: 0; */
+    padding-bottom: 20
+    %;
+  }
+
+  /*Views */  
+  .section-1 .container .bed-container .views {
+  top: 32%;
+  left: 0%;
+  /* z-index: 10; */
+}
+
+/* Clicks */
+.section-1 .container .bed-container .clicks {
+  position: absolute;
+  bottom: 0%;
+  right: 6%;
+}
 }
