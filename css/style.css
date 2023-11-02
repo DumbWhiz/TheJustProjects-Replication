@@ -1126,12 +1126,40 @@ ul > li:last-child a {
 }
 }
 
-@media (max-width: 620px){
+@media (max-width: 600px){
+
+  .navbar .container{
+    padding: 0 4rem;
+
+  }
+  .header .container{
+    padding: 0 4rem;
+  }
 
     /*Views and Clicks  */
   .section-1 .container .bed-container .card {
   padding: 1rem
 }
+
+.section-1 .container{
+  padding: 0 4rem;
+
+}
+
+ /*Views */  
+ .section-1 .container .bed-container .views {
+  top: 32%;
+  left: 6%;
+  /* z-index: 10; */
+}
+
+/* Clicks */
+.section-1 .container .bed-container .clicks {
+  position: absolute;
+  bottom: 5%;
+  right: 6%;
+}
+
 
 /* Card Image */
 .section-1 .container .bed-container .card .num-img {
@@ -1148,203 +1176,63 @@ ul > li:last-child a {
 .section-1 .container .bed-container .card .num-detail {
   font-size: 0.75rem;
 }
+
+.section-2 .container{
+  padding: 0 4rem;
 }
 
-@media (max-width: 580px){
+.footer .container{
+  flex-direction: column;
+  padding:2rem 4rem;
+}
+}
 
-  /* Header */
-  
-  .header .container .house-detail button {
-    font-size: 1rem;
-    width:100%
+
+@media (max-width: 500px){
+
+
+  .navbar .container{
+    padding: 0 2rem;
+
+  }
+  .header .container{
+    padding: 0 2rem;
   }
 
-  .section-2 .container .bed2-container .joy-card {
-    padding: 0.8rem;
-    width: 55%;
-    bottom: 1%;
+    /*Views and Clicks  */
+  .section-1 .container .bed-container .card {
+  padding: 1rem
+}
+
+.section-1 .container{
+  padding: 0 1rem;
+
+}
+
+.section-2 .container{
+  padding: 0 1rem;
+}
+
+}
+
+@media (max-width: 400px){
+  .house-detail .shop .shop-container{
+    
+    flex-wrap: wrap;
   }
-  
+}
+
+@media (max-width: 400px){
   .joy-img img {
     width: 100%;
     /* object-fit: cover; */
   }
-
-  /* Joy Details */
-  
-  .joy-card .joy-detail #p1 {
-    font-size: 0.8rem;
-  }
-  
-  .joy-card .joy-detail #p2 {
-    font-size: 0.6rem;
-  }
-  
-  .joy-card .joy-detail #p3 {
-    font-size: 0.5rem;
-  }
-  
-  /* social media icons */
-  
-  .joy-card .joy-rhs .social {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 579px){
-
-  /* Header Icons */
-  .house-detail .shop .shop-container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-}
-
-@media (max-width: 510px){
-  .joy-img img {
-    width: 150%;
-    /* object-fit: cover; */
-  }
-}
-
-@media (max-width: 520px){
-  /*Views */  
-  .section-1 .container .bed-container .views {
-    top: 30%;
-    left: 0%;
-    /* z-index: 10; */
-  }
-  
-  /* Clicks */
-  .section-1 .container .bed-container .clicks {
-    position: absolute;
-    bottom: -5%;
-    right: 6%;
-  }
-
-  /* Card Image */
-.section-1 .container .bed-container .card .num-img {
-  padding: 0.1;
-  width: 1.2rem;
-}
-
-/* Digits */
-
-.section-1 .container .section-1-detail h3 {
-  font-size: 2rem;
-}
-
-.section-1 .container .section-1-detail p {
-  font-size: 1rem;
-}
-
-.section-1 .container .section-1-detail .btn-2{
-  padding:0.6rem;
-  width:100%;
-}
-.section-1 .container .section-1-detail button {
-  font-size: 1rem;
-}
-
-.section-1 .container .bed-container .card .num {
-  font-size: 0.6rem;
-}
-
-/* 'Views' and 'Clicks' */
-.section-1 .container .bed-container .card .num-detail {
-  font-size: 0.5rem;
-}
-
-.section-2 .container .about-us {
-  width:100%;
-}
-
-.section-2 .container .about-us p {
-  font-size: 1rem;
-}
-
-.section-2 .container .about-us ul > li {
-  font-size: 1rem;
-}
-
-
-.joy-img img {
-  width: 100%;
-  /* object-fit: cover; */
-}
-
-/* Joy Details */
-
-.joy-card .joy-detail #p1 {
-  font-size: 0.7rem;
-}
-
-.joy-card .joy-detail #p2 {
-  font-size: 0.6rem;
-}
-
-.joy-card .joy-detail #p3 {
-  font-size: 0.4rem;
-}
-}
-
-@media (max-width: 520px){
   
   .section-2 .container .bed2-container .joy-card {
-    padding:0.4rem;
+    padding:1rem;
     width: 60%;
-    gap: 0.4rem;
+    gap: 1rem;
     position: absolute;
-    bottom: 0%;
+    bottom: -5%;
   }
-}
-
-@media (max-width: 450px){
-
-
-  .header .container .house-detail .shop .detail {
-    font-size: 0.6rem;
-  }
-
-  /*Views */  
-  .section-1 .container .bed-container .views {
-    top: 30%;
-    left: 0%;
-    /* z-index: 10; */
-  }
-  
-  /* Clicks */
-  .section-1 .container .bed-container .clicks {
-    position: absolute;
-    bottom: -1%;
-    right: 6%;
-  }
-
-     /*Views and Clicks  */
-     .section-1 .container .bed-container .card {
-      padding: 0.5rem
-     }
-      
-     .section-1 .container .bed-container .card .num {
-      font-size: 0.5rem;
-    }
-    
-    /* 'Views' and 'Clicks' */
-    .section-1 .container .bed-container .card .num-detail {
-      font-size: 0.4rem;
-    }
-
-  /* Card Image */
-.section-1 .container .bed-container .card .num-img {
-  margin-bottom: 0.6rem;
-  padding: 0.1;
-  width: 1rem;
-}
-
-
 }
