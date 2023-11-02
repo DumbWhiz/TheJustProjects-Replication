@@ -72,6 +72,11 @@ ul > li:last-child a {
   text-decoration: none;
 }
 
+/* Menu */
+
+.navbar .container .menu{
+  display:none;
+}
 /* Header */
 .header .container {
   display: flex;
@@ -231,8 +236,8 @@ ul > li:last-child a {
 }
 .section-1 .container .section-1-detail .btn-2 {
   background-color: var(--color-blue);
-  border: 1px solid var(--color-2);
-  border-radius: 8px;
+  border: 0.0625rem solid var(--color-2);
+  border-radius: 0.5rem;
   margin-bottom: 3.5rem;
   padding: 0.9063rem 1.5rem;
   width: 30%;
@@ -1129,9 +1134,10 @@ ul > li:last-child a {
 @media (max-width: 600px){
 
   .navbar .container{
-    padding: 0 4rem;
+    padding: 1.5rem 4rem;
 
   }
+
   .header .container{
     padding: 0 4rem;
   }
@@ -1192,7 +1198,7 @@ ul > li:last-child a {
 
 
   .navbar .container{
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
 
   }
   .header .container{
@@ -1235,4 +1241,126 @@ ul > li:last-child a {
     position: absolute;
     bottom: -5%;
   }
+}
+
+@media (max-width: 500px){
+  /* Navigation */
+.container .nav {
+  display: none;
+}
+
+.navbar .container{
+  padding:0rem 2rem;
+}
+.navbar .container .menu{
+  display:contents;
+}
+
+.navbar{
+  margin-bottom:2.5rem;
+  padding: 1rem 0rem;
+}
+
+/* Logo */
+.container .logo {
+  gap: 0.5rem;
+}
+
+.container .logo .jhomes{
+  font-size: 1.125rem;
+}
+.container .logo img{
+  width: 2rem;
+}
+
+/* Header */
+
+.header .container{
+  margin-bottom: 1rem;
+}
+.header .container .house-detail h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header .container .house-detail p{
+  font-size: 1rem;
+  margin-bottom:1.5rem;
+}
+
+.header .container .house-detail .btn{
+  padding: 0.9063rem 1.5rem;
+}
+
+.header .container .house-detail button{
+  font-size: 1.125rem;
+}
+
+/* Header Icons */
+.header .container .house-detail .shop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.house-detail .shop .shop-container {
+  display: flex;
+  /* align-items: center; */
+  /* flex-wrap: nowrap; */
+  gap: 0.5rem;
+}
+
+.house-detail .shop .shop-container .shop-img {
+  padding: 0.625rem;
+}
+
+.house-detail .shop .shop-container img {
+  padding: 0.1042rem 0.25rem 0.1667rem 0.25;
+  /* flex-shrink: 0; */
+}
+
+.header .container .house-detail .shop .detail {
+  font-size: 0.5rem;
+  /* line-height: 120%; */
+  /* width: 115px; */
+}
+
+/* Section 1 */
+.section-1 .container{
+  padding-top: 2rem;
+}
+.section-1 .container .section-1-detail h3{
+  font-size: 1.5rem;
+}
+.section-1 .container .section-1-detail p{
+  font-size: 1rem;
+}
+
+.section-1 .container .section-1-detail .btn-2 {
+  margin-bottom: 1.5rem;
+  padding: 0.9063rem 1.5rem;
+}
+
+.section-1 .container .bed-container .bed-img img {
+  /* flex-shrink: 0; */
+  padding-bottom: 30%;
+
+}
+/* Views and Clicks */
+
+ /*Views */  
+ .section-1 .container .bed-container .views {
+  top: 35%;
+  left: 1%;
+  /* z-index: 10; */
+}
+
+/* Clicks */
+.section-1 .container .bed-container .clicks {
+  position: absolute;
+  bottom:10%;
+  right: 6%;
+}
+
+
 }
