@@ -1009,6 +1009,9 @@ ul > li:last-child a {
   font-size: 0.75rem;
 }
 
+.section-2 .container{
+  flex-direction: column-reverse;
+}
   .section-2 .container .about-us {
     width:100%;
   }
@@ -1184,7 +1187,8 @@ ul > li:last-child a {
 }
 
 .section-2 .container{
-  padding: 0 4rem;
+  padding: 0 4rem
+  ;
 }
 
 .footer .container{
@@ -1350,17 +1354,54 @@ ul > li:last-child a {
 
  /*Views */  
  .section-1 .container .bed-container .views {
-  top: 35%;
+  top: 29%;
   left: 1%;
   /* z-index: 10; */
 }
 
 /* Clicks */
 .section-1 .container .bed-container .clicks {
-  position: absolute;
-  bottom:10%;
+  bottom:12%;
   right: 6%;
 }
 
+/*Views and Clicks  */
+.section-1 .container .bed-container .card {
+  padding: 1rem;
+}
+/* Card Image */
+.section-1 .container .bed-container .card .num-img {
+
+  margin-bottom: 1.25rem;
+  padding: 0.1rem;
+  gap:0.53688rem;
+}
+
+.section-1 .container .bed-container .card .num-img {
+  width:30%;
+  margin-bottom:10%;
+}
+/* Digits */
+
+.section-1 .container .bed-container .card .num {
+  font-size: 0.80531
+}
+
+/* 'Views' and 'Clicks' */
+.section-1 .container .bed-container .card .num-detail{
+  font-size:0.53688rem;
+}
+
+.section-2 .container .about-us p {
+  font-size: 1rem;
+}
+
+.section-2 .container .about-us ul > li {
+  font-size: 1rem;
+}
+  .footer .container .footer-logo img{
+    width:2.18481em;
+  }
 
 }
+
