@@ -843,12 +843,31 @@
 }
 
 @media (max-width: 749px) {
+  
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .navbar .container{
+    padding: 1.5rem 4rem;
+
+  }
+
+  .header .container{
+    padding: 0 4rem;
+  }
+
+  .section-1 .container{
+  padding: 0 4rem;
+}
+
+.section-2 .container{
+  padding: 0 4rem;
+}
+
   /* Header */
   .header .container{
     flex-wrap:wrap;
@@ -945,7 +964,7 @@
 /*Views */
 .section-1 .container .bed-container .views {
   top: 38%;
-  left: 0%;
+  left: 12%;
   /* z-index: 10; */
 }
 
@@ -1026,6 +1045,10 @@
     font-size: 1.1rem;
   }
 
+  .footer .container{
+    padding:2rem 4rem;
+  }
+
   .footer .container .footer-rhs p {
     font-size: 0.8
     rem;
@@ -1082,6 +1105,15 @@
 
 @media (max-width: 650px){
   
+
+   /* Navigation */
+  .container .nav {
+    display: none;
+  }
+  .navbar .container .menu{
+    display:contents;
+  }
+
   .section-1 .container .bed-container .bed-img img {
     /* flex-shrink: 0; */
     padding-bottom: 20%;
@@ -1137,25 +1169,6 @@
 }
 
 @media (max-width: 600px){
-
-  .navbar .container{
-    padding: 1.5rem 4rem;
-
-  }
-
-  .header .container{
-    padding: 0 4rem;
-  }
-
-    /*Views and Clicks  */
-  .section-1 .container .bed-container .card {
-  padding: 1rem
-}
-
-.section-1 .container{
-  padding: 0 4rem;
-
-}
 
  /*Views */  
  .section-1 .container .bed-container .views {
@@ -1245,23 +1258,20 @@
     width: 60%;
     gap: 1rem;
     position: absolute;
-    bottom: -5%;
+    bottom: -10%;
   }
+
+  .section-2 .container{
+    padding-bottom: 5rem;
+  }
+
 }
 
-@media (max-width: 500px){
-  /* Navigation */
-.container .nav {
-  display: none;
-}
+@media (max-width: 30px){
 
 .navbar .container{
   padding:0rem 2rem;
 }
-.navbar .container .menu{
-  display:contents;
-}
-
 .navbar{
   margin-bottom:2.5rem;
   padding: 1rem 0rem;
@@ -1386,7 +1396,7 @@
 /* Digits */
 
 .section-1 .container .bed-container .card .num {
-  font-size: 0.80531
+  font-size: 0.80531rem;
 }
 
 /* 'Views' and 'Clicks' */
@@ -1402,8 +1412,47 @@
   font-size: 1rem;
 }
   .footer .container .footer-logo img{
-    width:2.18481em;
+    width:2.18481rem;
   }
 
 }
 
+@media (max-width: 320px){
+  /* Joy girl card container*/
+
+.section-2 .container .bed2-container .joy-card {
+  /* flex-shrink: 0; */
+  padding: 2px;
+  width: 50%;
+  gap: 1rem;
+  position: absolute;
+  bottom: 10%;
+}
+
+/* Joy Details */
+
+.joy-card .joy-detail #p1 {
+  font-size: 0.8rem;
+}
+
+.joy-card .joy-detail #p2 {
+  font-size: 0.65rem;
+  line-height: 150%;
+  letter-spacing: 0.0313rem;
+}
+
+.joy-card .joy-detail #p3 {
+  font-size: 0.75rem;
+  line-height: 150%;
+  letter-spacing: 0.0313rem;
+}
+
+/* social media icons */
+
+.joy-card .joy-rhs .social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+}

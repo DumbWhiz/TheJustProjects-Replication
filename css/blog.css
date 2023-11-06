@@ -61,7 +61,6 @@
 }
 
 .article-1-header .container .article-nav ul>li a{
-    display: flex;
     list-style-type: none;
     color:var(--colorl);
     font-family:var(--font-family);
@@ -86,8 +85,8 @@
 .article-1 .container{
     padding:0 7.5rem;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
     gap: 2.5rem;
     margin-bottom:6.5rem;
 }
@@ -195,8 +194,8 @@
 .article-2 .container .card-2-container{
     display: grid;
     gap: 2.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
 .article-2 .container .card-2{
@@ -246,4 +245,160 @@
 .article-2 .container .card-2-container .card-2 .p3{
     font-size: 1rem;
     line-height: 150%;
+}
+
+
+@media (max-width:890px){
+ 
+    body .blog-navbar{
+        margin-bottom:0rem;
+    }
+    
+    body .blog-navbar .container{
+        padding: 1.5rem 1.2rem ;
+    }
+
+    .main .blog-header .container {
+        padding: 12.38rem 16.12rem 17.88rem 1.2rem;
+    }
+    
+    .blog-header-btn{
+        width: 70%;
+    }
+    
+    .main .blog-header .container .hero h1{
+        font-size: 4rem;
+    }
+    
+    /* Article 1 */
+    
+    .article-1-header .container{
+        display: flex;
+        align-items: start;
+        padding: 4rem 1.2rem 0rem 1.2rem;
+    }
+    
+    .article-1-header .container h2{
+        font-size: 2.5rem;
+      }
+    
+    .article-1 .container{
+        padding:0 1.2rem;
+    }
+
+    .card-contianer .article-text .p1{
+        font-size: 0.75rem;
+    }
+    
+    .card-contianer .article-text .p2{
+        font-size: 1rem;
+    }
+    
+    .card-contianer .article-text h4{
+        font-size: 1.5rem;
+    }
+    
+    .quote{
+        padding:0 1.2rem;
+    }
+    
+    
+    .quote .container p{
+        font-size: 2.5rem;
+        padding: 12.38rem;
+    
+    }
+    
+    
+    .Line .container{
+        padding: 3rem 1.2rem;
+    }
+    
+    .article-2 .container{
+        padding: 0 1.2rem;
+        
+    }
+    
+    .article-2 .container h2{
+        font-size: 3.5rem;
+    }
+    
+    .article-2 .container .card-2-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    
+    .article-2 .container .card-2{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4.625rem 1.5rem;
+    }
+    
+    .article-2 .container .card-2a{
+        background-image: url("../img/Blog/Card/Card-1-img.png");
+    }
+    
+    .article-2 .container .card-2b{
+        background-image: url("../img/Blog/Card/Card-2-img.png");
+    }
+    
+    .article-2 .container .card-2c{
+        background-image: url("../img/Blog/Card/Card-3-img.png");
+        width: 210%;
+    }
+    
+    .article-2 .container .card-2-container .card-2 .p1{
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .article-2 .container .card-2-container .card-2 .p2{
+        font-size: 1.125rem;
+    }
+    
+    .article-2 .container .card-2-container .card-2 .p3{
+        font-size: 1rem;
+        line-height: 150%;
+    }
+    
+}
+
+@media (max-width:678px){
+    .article-2 .container .card-2c{
+        width: 100%;
+    }
+}
+
+@media (max-width:650px){
+    .main .blog-header .container {
+        background: grey url("../img/Blog/Header/Hero-img.png") no-repeat fixed center;
+        background-size:cover;
+        padding: 12.38rem 1.2rem 17.88rem 1.2rem;
+    }
+    .article-2 .container .card-2-container{
+        /* width: 100%; */
+        padding: 0rem;
+    }
+}
+
+@media (max-width:335px){
+    
+    .blog-header-btn{
+        width: 100%;
+    }
+    
+    .article-1 .container{
+        padding:0rem;
+        width: 100%;
+    }
+
+    .article-1 .container .card-container{
+        width: 50%;
+    }
+    
+    .card-contianer .article-text{
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+    
 }
