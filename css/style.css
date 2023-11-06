@@ -53,6 +53,7 @@
 
 /* Navigation */
 .container .nav ul {
+  font-family: var(--font-family);
   list-style-type: none;
   display: flex;
   flex-direction: row;
