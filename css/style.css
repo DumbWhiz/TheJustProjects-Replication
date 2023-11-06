@@ -1429,6 +1429,11 @@
   bottom: 10%;
 }
 
+.joy-img img {
+  width: 120%;
+  /* object-fit: cover; */
+}
+
 /* Joy Details */
 
 .joy-card .joy-detail #p1 {
@@ -1437,13 +1442,12 @@
 
 .joy-card .joy-detail #p2 {
   font-size: 0.65rem;
-  line-height: 150%;
   letter-spacing: 0.0313rem;
 }
 
 .joy-card .joy-detail #p3 {
-  font-size: 0.75rem;
-  line-height: 150%;
+  font-size: 0.5rem;
+  /* line-height: 150%; */
   letter-spacing: 0.0313rem;
 }
 
@@ -1451,7 +1455,9 @@
 
 .joy-card .joy-rhs .social {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  width: 5rem;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 
