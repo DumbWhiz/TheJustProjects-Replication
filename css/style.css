@@ -23,10 +23,14 @@
   /* flex-wrap:wrap; */
 }
 
+.hamburger{
+  display: none;
+}
 /* Navbar */
 .navbar {
   margin-bottom: 5.1875rem;
 }
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -76,7 +80,7 @@
 
 /* Menu */
 
-.navbar .container .open{
+.open{
   display:none;
 }
 
@@ -1115,10 +1119,15 @@
 
 @media (max-width: 650px){
   
-  .container{
-    overflow:visible;
+  .navbar .container{
+    /* overflow-y: visible;
+    overflow-x:hidden; */
+    overflow: visible;
   }
   
+  .hamburger{
+    display: block;
+  }
   /* Navigation */
   .container .nav {
     display: none;
