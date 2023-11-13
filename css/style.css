@@ -14,10 +14,6 @@
   --font-family-p: "ProximaNova";
 }
 
-body{
-  
-}
-
 /* Container */
 .container {
   max-width: 1440px;
@@ -83,6 +79,7 @@ body{
 .navbar .container .open{
   display:none;
 }
+
 
 .close{
   display:none;
@@ -1118,17 +1115,15 @@ body{
 
 @media (max-width: 650px){
   
-  body{
-    /* overflow: hidden; */
-  }
   .container{
     overflow:visible;
-
   }
+  
   /* Navigation */
   .container .nav {
     display: none;
   }
+  
   .navbar .container .open{
     display:contents;
   }
@@ -1317,6 +1312,47 @@ body{
 }
 
 @media (max-width: 400px){
+  
+  /* Navigation */
+  
+  .menu.active{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding:0 7.5rem
+  }
+  
+  .navbar .container .menu ul>li{
+    margin-bottom: 4.5rem;    
+  }
+
+  .navbar .container .menu ul>li:first-child{
+    margin-top:3rem;
+  }
+
+  .navbar .container .menu ul>li:first-child, .menu ul>:nth-of-type(2) {
+    border-bottom:1px var(--color) solid;
+    /* width:50vw; */
+    padding:0 1.5rem 1.5rem 1.5rem;
+
+  }
+  
+  .navbar .container .menu ul>li{
+    font-family: var(--font-family);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height:150%;
+    list-style-type: none;
+    text-align:center ;
+    /* text-decoration: none; */                         
+  }
+  
+  .navbar .container .menu ul>li a{
+    color: var(--color-b-2);
+    text-decoration: none;
+  }
+
   .joy-img img {
     width: 100%;
     /* object-fit: cover; */
@@ -1336,7 +1372,7 @@ body{
 
 }
 
-@media (max-width: 30px){
+@media (max-width: 350px){
 
 .navbar .container{
   padding:0rem 2rem;
@@ -1530,4 +1566,28 @@ body{
   margin-top: 1rem;
 }
 
+}
+
+@media (max-width: 250px){
+  
+  .navbar .container{
+    padding:0rem 2rem;
+  }
+  .navbar{
+    margin-bottom:2.5rem;
+    padding: 1rem 0rem;
+  }
+  
+  /* Logo */
+  .container .logo {
+    gap: 0.2rem;
+  }
+  
+  .container .logo .jhomes{
+    font-size: 1rem;
+  }
+  .container .logo img{
+    width: 1.2rem;
+  }
+  
 }
