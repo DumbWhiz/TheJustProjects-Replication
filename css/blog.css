@@ -62,7 +62,7 @@
 
 .article-1-header .container .article-nav ul>li a{
     list-style-type: none;
-    color:var(--colorl);
+    color:var(--color-b-2);
     font-family:var(--font-family);
     text-transform:uppercase; 
 }

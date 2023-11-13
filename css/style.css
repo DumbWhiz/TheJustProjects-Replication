@@ -14,14 +14,17 @@
   --font-family-p: "ProximaNova";
 }
 
+body{
+  
+}
+
 /* Container */
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  /* border: 2px solid red; */
   display: flex;
-  /* flex-wrap:wrap; */
   overflow: hidden;
+  /* flex-wrap:wrap; */
 }
 
 /* Navbar */
@@ -33,8 +36,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 7.5rem;
+  position: relative;
 }
 
+ 
 /* Logo */
 .container .logo {
   display: flex;
@@ -58,7 +63,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border: 0.125rem blue solid; */
 }
 
 .container .nav li {
@@ -71,14 +75,23 @@
 
 .container .nav a {
   text-decoration: none;
-  color: var(--color);
+  color: var(--color-b-2);
 }
 
 /* Menu */
 
-.navbar .container .menu{
+.navbar .container .open{
   display:none;
 }
+
+.close{
+  display:none;
+}
+
+.menu{
+  display:none;
+}
+
 /* Header */
 .header .container {
   display: flex;
@@ -1105,14 +1118,71 @@
 
 @media (max-width: 650px){
   
+  body{
+    /* overflow: hidden; */
+  }
+  .container{
+    overflow:visible;
 
-   /* Navigation */
+  }
+  /* Navigation */
   .container .nav {
     display: none;
   }
-  .navbar .container .menu{
+  .navbar .container .open{
     display:contents;
   }
+
+  /* Close */
+  .close.active{
+    display: none;
+  }
+  
+  .menu.active{
+    display:none;
+    background:#F3F6F1;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: flex;
+    justify-content:center;
+    height: 100vh;
+    width:100%;
+    padding:0 7.5rem
+  }
+  
+  .navbar .container .menu-nav ul>li{
+    margin-bottom: 4.5rem;    
+  }
+
+  .navbar .container .menu-nav ul>li:first-child{
+    margin-top:3rem;
+  }
+
+  .navbar .container .menu-nav ul>li:first-child, .menu-nav ul>:nth-of-type(2) {
+    border-bottom:1px var(--color) solid;
+    width:80vw;
+    padding:0 7.5rem 1.5rem 7.5rem;
+
+  }
+  
+  .navbar .container .menu-nav ul>li{
+    font-family: var(--font-family);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height:150%;
+    list-style-type: none;
+    text-align:center ;
+    /* text-decoration: none; */
+                          
+  }
+  
+  .navbar .container .menu-nav ul>li a{
+    color: var(--color-b-2);
+    text-decoration: none;
+  }
+  
 
   .section-1 .container .bed-container .bed-img img {
     /* flex-shrink: 0; */
