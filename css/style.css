@@ -1123,7 +1123,7 @@
   .container .nav {
     display: none;
   }
-  
+
   .navbar .container .open{
     display:contents;
   }
@@ -1281,11 +1281,11 @@
 
 
   .navbar .container{
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
 
   }
   .header .container{
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
     /*Views and Clicks  */
@@ -1375,7 +1375,7 @@
 @media (max-width: 350px){
 
 .navbar .container{
-  padding:0rem 2rem;
+  padding:0rem 1rem;
 }
 .navbar{
   margin-bottom:2.5rem;
@@ -1571,7 +1571,7 @@
 @media (max-width: 250px){
   
   .navbar .container{
-    padding:0rem 2rem;
+    padding:0rem 1rem;
   }
   .navbar{
     margin-bottom:2.5rem;
