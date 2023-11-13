@@ -1151,22 +1151,22 @@ body{
     padding:0 7.5rem
   }
   
-  .navbar .container .menu-nav ul>li{
+  .navbar .container .menu ul>li{
     margin-bottom: 4.5rem;    
   }
 
-  .navbar .container .menu-nav ul>li:first-child{
+  .navbar .container .menu ul>li:first-child{
     margin-top:3rem;
   }
 
-  .navbar .container .menu-nav ul>li:first-child, .menu-nav ul>:nth-of-type(2) {
+  .navbar .container .menu ul>li:first-child, .menu ul>:nth-of-type(2) {
     border-bottom:1px var(--color) solid;
     width:80vw;
     padding:0 7.5rem 1.5rem 7.5rem;
 
   }
   
-  .navbar .container .menu-nav ul>li{
+  .navbar .container .menu ul>li{
     font-family: var(--font-family);
     font-size: 1.125rem;
     font-style: normal;
@@ -1174,11 +1174,10 @@ body{
     line-height:150%;
     list-style-type: none;
     text-align:center ;
-    /* text-decoration: none; */
-                          
+    /* text-decoration: none; */                         
   }
   
-  .navbar .container .menu-nav ul>li a{
+  .navbar .container .menu ul>li a{
     color: var(--color-b-2);
     text-decoration: none;
   }
